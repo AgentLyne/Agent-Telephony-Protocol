@@ -1,0 +1,31 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Editor temp files
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Build output
+dist/
+build/
+out/
+
+# Node (if reference impls land here in future)
+node_modules/
+
+# Python (if reference impls land here in future)
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+
+# Environment
+.env
+.env.local
