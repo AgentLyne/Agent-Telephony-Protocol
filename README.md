@@ -18,12 +18,15 @@ This repository hosts the canonical specification documents and reference materi
 
 ## What's in this repo
 
-| Document | Purpose |
-|---|---|
-| [`ATP-SPEC.md`](./ATP-SPEC.md) | Canonical overview of the full 35-RFC series — abstracts, scope, phase assignments, strategic logic |
-| [`rfcs/RFC-0022.md`](./rfcs/RFC-0022.md) | Know Your Agent (KYA) Attestation — the agent-operator identity envelope (Phase 2 headline RFC) |
+| Document | Purpose | Phase |
+|---|---|---|
+| [`ATP-SPEC.md`](./ATP-SPEC.md) | Canonical overview of the full 35-RFC series — abstracts, scope, phase assignments, strategic logic | — |
+| [`rfcs/RFC-0001.md`](./rfcs/RFC-0001.md) | **Architecture & Terminology** — roles, resource taxonomy, identifier formats, naming conventions, versioning policy | 0 |
+| [`rfcs/RFC-0002.md`](./rfcs/RFC-0002.md) | **Sessions, Capability Negotiation, Transports** — extends MCP `initialize` with `atp_capabilities`; defines transports, auth, tenancy, session durability | 0 |
+| [`rfcs/RFC-0003.md`](./rfcs/RFC-0003.md) | **Tool Catalog Conventions** — the standardized tool catalog (35+ tools), the start + subscribe async pattern, error envelope, idempotency, per-tier conformance | 0 |
+| [`rfcs/RFC-0022.md`](./rfcs/RFC-0022.md) | **Know Your Agent (KYA) Attestation** — agent-operator identity envelope; CWT/COSE-encoded signed cert binding agent runtime identity to accountable real-world tenant | 2 |
 
-Additional RFCs are added as drafts mature. Reference implementations in TypeScript, Python, and Go will ship under separate companion repositories.
+The Phase 0 foundation (ATP-1, ATP-2, ATP-3) plus the Phase 2 headline KYA spec (ATP-22) are publicly published. Additional RFCs are drafted as the spec roadmap advances; see [`ATP-SPEC.md`](./ATP-SPEC.md) for the full list. Reference implementations in TypeScript, Python, and Go will ship under separate companion repositories.
 
 ---
 
